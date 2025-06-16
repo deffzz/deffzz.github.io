@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Drive Universitario</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Drive Universitario</h1>
+
+  <section class="upload-section">
+    <h2>Subir documento (.docx)</h2>
+    <input type="file" id="fileInput" />
+    <button onclick="uploadFile()">Subir</button>
+  </section>
+
+  <section class="note-section">
+    <h2>Crear nota</h2>
+    <input type="text" id="noteTitle" placeholder="Título de la nota"/>
+    <textarea id="noteContent" placeholder="Escribe tu nota aquí..."></textarea>
+    <button onclick="saveNote()">Guardar nota</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
